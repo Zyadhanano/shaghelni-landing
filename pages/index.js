@@ -54,25 +54,28 @@ export default function Home() {
       </Head>
 
       <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center p-6">
-        <h1 className="text-4xl font-bold mb-4">وظائف حقيقية. ناس حقيقية. فرص حقيقية.</h1>
-        <p className="text-lg mb-6 max-w-xl">
-          منصة شَغّلني بتوصلك مباشرةً مع فرص العمل المتوفرة <strong>في سوريا</strong> من خلال واتساب – بدون تطبيقات، بدون تسجيل معقد.
-        </p>
-        <a
-          href="#"
-          className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
-        >
-          ابدأ المحادثة على واتساب
-        </a>
-            <div className="mt-4">
+  <h1 className="text-4xl font-bold mb-4">دور على شغل؟ نحنا هون لنساعدك</h1>
+  <p className="text-lg mb-4 max-w-xl">
+    شَغّلني هي خدمة <strong>مجانية</strong> للناس يلي عم تدور على شغل <strong>بسوريا</strong>. ما في داعي لا سيرة ذاتية ولا مقابلات رسمية – بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
+  </p>
+  <p className="text-md mb-6 max-w-xl">
+    منصتنا بتدعمك وتوصلك مع فرص حقيقية ضمن مطاعم، فنادق، شركات تنظيف، شركات نقل، وحتى مشاريع كبيرة مثل المرفأ الجديد، المدينة الإعلامية، والطاقة.
+  </p>
   <a
-    href="/employers"
-    className="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+    href="https://wa.me/WHATSAPPNUMBER" // replace with actual number later
+    className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition text-lg font-semibold"
   >
-    لأصحاب العمل
+    بلّش معنا على واتساب
   </a>
-</div>
-      </section>
+  <div className="mt-4">
+    <a
+      href="/employers"
+      className="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+    >
+      لأصحاب العمل
+    </a>
+  </div>
+</section>
 
       <section className="bg-white py-12 px-6">
         <h2 className="text-2xl font-bold text-center mb-6">كيف تعمل شَغّلني؟</h2>
