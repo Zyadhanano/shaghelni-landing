@@ -10,31 +10,29 @@ export default function Home() {
     phone: '',
     email: '',
     notes: '',
-  });
+  })
 
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(false)
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSuccess(false);
+    e.preventDefault()
+    setSuccess(false)
 
     const response = await fetch('/api/job-request', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
-    });
+    })
 
     if (response.ok) {
-      setSuccess(true);
+      setSuccess(true)
       setFormData({
         company_name: '',
         job_title: '',
@@ -43,11 +41,11 @@ export default function Home() {
         phone: '',
         email: '',
         notes: '',
-      });
+      })
     } else {
-      alert('حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.');
+      alert('حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.')
     }
-  };
+  }
 
   return (
     <div dir="rtl" className="font-sans bg-white text-gray-900">
@@ -106,4 +104,3 @@ export default function Home() {
     </div>
   )
 }
-
