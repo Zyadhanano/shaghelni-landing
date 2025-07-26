@@ -77,14 +77,26 @@ export default function Home() {
 </section>
 
       <section className="bg-white py-12 px-6">
-        <h2 className="text-2xl font-bold text-center mb-6">كيف تعمل شَغّلني؟</h2>
-        <ul className="max-w-2xl mx-auto space-y-4 text-right text-lg">
-          <li>1. تحدث معنا على واتساب باللهجة السورية</li>
-          <li>2. جاوب على شوية أسئلة بسيطة (اسمك، مهاراتك، وين ساكن، شو بتعرف تشتغل)</li>
-          <li>3. منخزن معلوماتك بقاعدة بيانات</li>
-          <li>4. بس يطلب صاحب شغل شخص عنده نفس مهاراتك، منتواصل معك مباشرة</li>
-        </ul>
-      </section>
+  <h2 className="text-2xl font-bold text-center mb-6">كيف بتشتغل شَغّلني؟</h2>
+  <div className="max-w-3xl mx-auto grid gap-6 md:grid-cols-2 text-right text-lg leading-loose">
+    <div className="bg-gray-50 p-6 rounded shadow-sm">
+      <h3 className="font-bold text-xl mb-2">1. احكي معنا على واتساب</h3>
+      <p>بتبعتلنا رسالة صوتية أو كتابية على واتساب، وبتحكي عن حالك.</p>
+    </div>
+    <div className="bg-gray-50 p-6 rounded shadow-sm">
+      <h3 className="font-bold text-xl mb-2">2. جاوب على كم سؤال بسيط</h3>
+      <p>منسألك عن اسمك، شو بتعرف تشتغل، وين ساكن، وقديش جاهز تبلّش.</p>
+    </div>
+    <div className="bg-gray-50 p-6 rounded shadow-sm">
+      <h3 className="font-bold text-xl mb-2">3. منفوت معلوماتك بقاعدة بيانات</h3>
+      <p>معلوماتك بتضل محفوظة عنا، ومبسطة، بدون أوراق ولا تسجيل رسمي.</p>
+    </div>
+    <div className="bg-gray-50 p-6 rounded shadow-sm">
+      <h3 className="font-bold text-xl mb-2">4. منوصلك بفرص شغل مناسبة</h3>
+      <p>بس يطلب صاحب شغل حدا عنده مهاراتك، منرجع منوصلك معه فوراً.</p>
+    </div>
+  </div>
+</section>
 
       <section className="bg-gray-100 py-12 px-6">
         <h2 className="text-2xl font-bold text-center mb-6">هل تحتاج إلى عمّال أو موظفين؟</h2>
