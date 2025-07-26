@@ -54,13 +54,12 @@ export default function Home() {
       </Head>
 
       <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center p-6">
-  <h1 className="text-4xl font-bold mb-4">دور على شغل؟ نحنا هون لنساعدك</h1>
-  <p className="text-lg mb-4 max-w-xl">
-    شَغّلني هي خدمة <strong>مجانية</strong> للناس يلي عم تدور على شغل <strong>بسوريا</strong>. ما في داعي لا سيرة ذاتية ولا مقابلات رسمية – بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
-  </p>
-  <p className="text-md mb-6 max-w-xl">
-    منصتنا بتدعمك وتوصلك مع فرص حقيقية ضمن مطاعم، فنادق، شركات تنظيف، شركات نقل، وحتى مشاريع كبيرة مثل المرفأ الجديد، المدينة الإعلامية، والطاقة.
-  </p>
+  <h1 className="text-4xl font-bold mb-4">‏عم بتدور على شغل ؟ نحنا هون لنساعدك</h1>
+<p className="text-lg mb-6 max-w-xl">
+  شَغّلني هي خدمة مجانية  لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
+  <br /><br />
+  منصتنا بتدعمك وبتوصلك مع فرص حقيقية في المطاعم والفنادق وشركات التنظيف والنقل والإنشاءات، وحتى المشاريع الكبيرة المعلن عنها من موانئ وبناء وطاقة وغيرها.
+</p>
   <a
     href="https://wa.me/WHATSAPPNUMBER" // replace with actual number later
     className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition text-lg font-semibold"
