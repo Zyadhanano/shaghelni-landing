@@ -119,6 +119,23 @@ export default function Home() {
           </button>
         </form>
       </section>
+<section className="bg-white py-12 px-6 text-right">
+  <div className="max-w-2xl mx-auto space-y-6 text-lg">
+    <p>سوريا عم ترجع تعمّر، وفرص الشغل عم تكبر بكل القطاعات – من المرافئ والإنشاءات، للطاقة والمطاعم.</p>
+    <p>شَغّلني موجود ليساعدك تكون جزء من هالفرص.</p>
+    <p>منصتنا بتوصلك مع الشركات الحقيقية يلي بحاجة لناس متلك – ومن دون سير ذاتية ولا تعقيدات.</p>
+    <div className="mt-6 text-center">
+      <a
+        href="https://wa.me/whatsapplink" // ← replace with your actual WhatsApp link
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
+      >
+        ابعتلنا هلق عالواتساب
+      </a>
+    </div>
+  </div>
+</section>
 
       <footer className="bg-gray-800 text-white text-center py-6 text-sm">
         منصة شَغّلني © 2025 – بريد: support@shaghelni.com
