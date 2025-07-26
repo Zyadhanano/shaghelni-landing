@@ -81,15 +81,15 @@ export default function Home() {
   <div className="max-w-3xl mx-auto grid gap-6 md:grid-cols-2 text-right text-lg leading-loose">
     <div className="bg-gray-50 p-6 rounded shadow-sm">
       <h3 className="font-bold text-xl mb-2">1. احكي معنا على واتساب</h3>
-      <p>بتبعتلنا رسالة صوتية أو كتابية على واتساب، وبتحكي عن حالك.</p>
+      <p>بتبعتلنا رسالة صوتية أو مكتوبة على واتساب، وبتتبع الخطوات لتحكيلنا عن حالك.</p>
     </div>
     <div className="bg-gray-50 p-6 rounded shadow-sm">
       <h3 className="font-bold text-xl mb-2">2. جاوب على كم سؤال بسيط</h3>
-      <p>منسألك عن اسمك، شو بتعرف تشتغل، وين ساكن، وقديش جاهز تبلّش.</p>
+      <p>منسألك عن اسمك، شو بتعرف تشتغل، وين ساكن، ‏وامتى قادر تبلش شغل.</p>
     </div>
     <div className="bg-gray-50 p-6 rounded shadow-sm">
       <h3 className="font-bold text-xl mb-2">3. منفوت معلوماتك بقاعدة بيانات</h3>
-      <p>معلوماتك بتضل محفوظة عنا، ومبسطة، بدون أوراق ولا تسجيل رسمي.</p>
+      <p>معلوماتك بتضل محفوظة عنا، ومبسطة، بدون أوراق ولا تسجيلات معقدة.</p>
     </div>
     <div className="bg-gray-50 p-6 rounded shadow-sm">
       <h3 className="font-bold text-xl mb-2">4. منوصلك بفرص شغل مناسبة</h3>
