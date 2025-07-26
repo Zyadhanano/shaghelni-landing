@@ -64,6 +64,14 @@ export default function Home() {
         >
           ابدأ المحادثة على واتساب
         </a>
+            <div className="mt-4">
+  <a
+    href="/employers"
+    className="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+  >
+    لأصحاب العمل
+  </a>
+</div>
       </section>
 
       <section className="bg-white py-12 px-6">
