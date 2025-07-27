@@ -49,9 +49,11 @@ export default function Home() {
 
   return (
     <div dir="rtl" className="font-sans bg-white text-gray-900">
-      <Head>
-        <title>شَغّلني - منصة فرص العمل في سوريا</title>
-      </Head>
+     <Head>
+  <title>شَغّلني - منصة فرص العمل في سوريا</title>
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+
 
       <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center p-6">
   <h1 className="text-4xl font-bold mb-4">‏عم بتدور على شغل ؟ نحنا هون لنساعدك</h1>
