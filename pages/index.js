@@ -137,24 +137,27 @@ export default function Home() {
     </a>
   </div>
 </section>
-      
 <section className="bg-white py-16 px-6 text-center">
-  <h2 className="text-2xl font-bold mb-10">كيف شَغّلني بيساعد أصحاب الشغل؟</h2>
+  <h2 className="text-2xl font-bold mb-12">كيف شَغّلني بيساعد أصحاب الشغل؟</h2>
 
-  <div className="max-w-5xl mx-auto grid gap-8 sm:grid-cols-2 text-right text-lg leading-relaxed">
-    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
-      <h3 className="font-bold text-xl mb-2">نزّل فرصة شغل (أقل من دقيقة)</h3>
+  <div className="max-w-6xl mx-auto grid gap-6 md:grid-cols-4 text-right text-lg leading-relaxed">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
+      <div className="text-4xl font-bold text-blue-700 mb-3">١</div>
+      <h3 className="font-bold text-xl mb-2">نزّل فرصة شغل (بأقل من دقيقة)</h3>
       <p>عبّي نموذج بسيط بتشرح فيه شو بدك.</p>
     </div>
-    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
+      <div className="text-4xl font-bold text-blue-700 mb-3">٢</div>
       <h3 className="font-bold text-xl mb-2">منبعتلك مرشّحين موثوقين</h3>
-      <p>‏نحنا بنجري مقابلات مع المتقدمين و نتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل وانهم يطابقوا المواصفات ياللي طلبتها</p>
+      <p>‏نحنا بنجري مقابلات مع المتقدمين و نتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل و يطابقوا المواصفات ياللي طلبتها</p>
     </div>
-    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
+      <div className="text-4xl font-bold text-blue-700 mb-3">٣</div>
       <h3 className="font-bold text-xl mb-2">إ تختار مين بدك تقابل</h3>
       <p>‏نحنا منسق مواعيد المقابلات الأخيرة لكي تتأكد وتختار بين المرشحين</p>
     </div>
-    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
+      <div className="text-4xl font-bold text-blue-700 mb-3">٤</div>
       <h3 className="font-bold text-xl mb-2">بتعمل مقابلة أخيرة وبتوظّف</h3>
       <p>وهيك بتعطي فرص حقيقية لناس جدّيين وعم يشتغلوا ليبنوا حياة أفضل</p>
     </div>
