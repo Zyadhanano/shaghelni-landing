@@ -55,25 +55,25 @@ export default function Home() {
 </Head>
 
 
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center p-6">
-  <h1 className="text-4xl font-bold mb-4">‏عم بتدور على شغل ؟ نحنا هون لنساعدك</h1>
-<p className="text-lg mb-6 max-w-xl">
-  شَغّلني هي خدمة مجانية  لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
-  <br /><br />
-  منصتنا بتدعمك وبتوصلك مع فرص حقيقية في المطاعم والفنادق وشركات التنظيف والنقل والإنشاءات، وحتى المشاريع الكبيرة المعلن عنها من موانئ وبناء وطاقة وغيرها.
-</p>
-  <a
-    href="https://wa.me/WHATSAPPNUMBER" // replace with actual number later
-    className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition text-lg font-semibold"
-  >
-    بلّش معنا على واتساب
-  </a>
-  <div className="mt-4">
+     <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center px-6 py-12 space-y-6">
+  <h1 className="text-3xl md:text-4xl font-bold max-w-2xl leading-relaxed">
+    الطريقة الجديدة لتوظيف عمّال سوريا
+  </h1>
+  <p className="text-lg max-w-xl text-gray-700">
+    شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين من سوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
+  </p>
+  <div className="flex flex-col md:flex-row gap-4">
+    <a
+      href="https://wa.me/WHATSAPPNUMBER" // replace when ready
+      className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
+    >
+      بدي اشتغل
+    </a>
     <a
       href="/employers"
-      className="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition"
+      className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
     >
-      لأصحاب العمل
+      بدي وظّف
     </a>
   </div>
 </section>
