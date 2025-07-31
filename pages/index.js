@@ -99,27 +99,28 @@ export default function Home() {
   </a>
 </section>
 
-      <section className="bg-white py-12 px-6">
-  <h2 className="text-2xl font-bold text-center mb-6">كيف بتشتغل شَغّلني؟</h2>
-  <div className="max-w-3xl mx-auto grid gap-6 md:grid-cols-2 text-right text-lg leading-loose">
-    <div className="bg-gray-50 p-6 rounded shadow-sm">
+     <section className="bg-white py-16 px-6">
+  <h2 className="text-2xl font-bold text-center mb-10">كيف شَغّلني بتساعدك تلاقي شغل؟</h2>
+  <div className="max-w-4xl mx-auto grid gap-8 sm:grid-cols-2 text-right text-lg leading-loose">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
       <h3 className="font-bold text-xl mb-2">1. احكي معنا على واتساب</h3>
-      <p>بتبعتلنا رسالة صوتية أو مكتوبة على واتساب، وبتتبع الخطوات لتحكيلنا عن حالك.</p>
+      <p>بتبعتلنا رسالة على واتساب، ومنبدا نحكي معك خطوة بخطوة.</p>
     </div>
-    <div className="bg-gray-50 p-6 rounded shadow-sm">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
       <h3 className="font-bold text-xl mb-2">2. جاوب على كم سؤال بسيط</h3>
       <p>منسألك عن اسمك، شو بتعرف تشتغل، وين ساكن، ‏وامتى قادر تبلش شغل.</p>
     </div>
-    <div className="bg-gray-50 p-6 rounded shadow-sm">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
       <h3 className="font-bold text-xl mb-2">3. منفوت معلوماتك بقاعدة بيانات</h3>
       <p>معلوماتك بتضل محفوظة عنا، ومبسطة، بدون أوراق ولا تسجيلات معقدة.</p>
     </div>
-    <div className="bg-gray-50 p-6 rounded shadow-sm">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
       <h3 className="font-bold text-xl mb-2">4. منوصلك بفرص شغل مناسبة</h3>
       <p>بس يطلب صاحب شغل حدا عنده مهاراتك، منرجع منوصلك معه فوراً.</p>
     </div>
   </div>
 </section>
+
 
       <section className="bg-gray-100 py-12 px-6">
         <h2 className="text-2xl font-bold text-center mb-6">هل تحتاج إلى عمّال أو موظفين؟</h2>
