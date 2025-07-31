@@ -121,6 +121,56 @@ export default function Home() {
   </div>
 </section>
 
+      <section className="bg-gray-100 py-16 px-6 text-center">
+  <h2 className="text-2xl font-bold mb-10">ليش ‏الشركات و أصحاب الشغل عم يختاروا شَغّلني؟</h2>
+
+  <div className="max-w-4xl mx-auto grid gap-6 sm:grid-cols-3 text-right text-lg leading-relaxed">
+    <div className="flex flex-col items-start bg-white p-6 rounded-xl shadow-md">
+      <span className="material-icons text-green-600 text-3xl mb-2">groups</span>
+      <p>‏تواصل مع موظّفين وعمال ما عم تقدر توصل لهم اليوم</p>
+    </div>
+    <div className="flex flex-col items-start bg-white p-6 rounded-xl shadow-md">
+      <span className="material-icons text-green-600 text-3xl mb-2">access_time_filled</span>
+      <p>وفّر وقتك —  ما في حاجة لمراجعة مئات الطلبات أو متابعة ناس ما بترد أو مالها جاهزة</p>
+    </div>
+    <div className="flex flex-col items-start bg-white p-6 rounded-xl shadow-md">
+      <span className="material-icons text-green-600 text-3xl mb-2">account_box</span>
+      <p>‏الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعلنا لبعد ما يبدأ العمل و تطمن  من النتائج</p>
+    </div>
+  </div>
+
+  <div className="mt-10">
+    <a
+      href="#employer-form"
+      className="inline-block bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition text-lg font-semibold"
+    >
+      بدي وظّف
+    </a>
+  </div>
+</section>
+        
+<section className="bg-white py-16 px-6 text-center">
+  <h2 className="text-2xl font-bold mb-10">كيف شَغّلني بيساعد أصحاب الشغل؟</h2>
+
+  <div className="max-w-5xl mx-auto grid gap-8 sm:grid-cols-2 text-right text-lg leading-relaxed">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 className="font-bold text-xl mb-2">نزّل فرصة شغل (أقل من دقيقة)</h3>
+      <p>عبّي نموذج بسيط بتشرح فيه شو بدك.</p>
+    </div>
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 className="font-bold text-xl mb-2">منبعتلك مرشّحين موثوقين</h3>
+      <p>‏نحنا بنجري مقابلات مع المتقدمين و نتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل وانهم يطابقوا المواصفات ياللي طلبتها</p>
+    </div>
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 className="font-bold text-xl mb-2">إ تختار مين بدك تقابل</h3>
+      <p>‏نحنا منسق مواعيد المقابلات الأخيرة لكي تتأكد وتختار بين المرشحين</p>
+    </div>
+    <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 className="font-bold text-xl mb-2">بتعمل مقابلة أخيرة وبتوظّف</h3>
+      <p>وهيك بتعطي فرص حقيقية لناس جدّيين وعم يشتغلوا ليبنوا حياة أفضل</p>
+    </div>
+  </div>
+</section>
 
       <section className="bg-gray-100 py-12 px-6">
         <h2 className="text-2xl font-bold text-center mb-6">هل تحتاج إلى عمّال أو موظفين؟</h2>
