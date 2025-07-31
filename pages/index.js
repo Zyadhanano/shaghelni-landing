@@ -119,24 +119,21 @@ export default function Home() {
     </div>
   </div>
 </section>
-
   <section className="bg-gray-50 py-16 px-6 text-center">
   <h2 className="text-2xl font-bold mb-8">ليش ‏الشركات و أصحاب الشغل عم يختاروا شَغّلني؟</h2>
 
-  <div className="max-w-2xl mx-auto text-right text-lg leading-loose space-y-6">
+  <div className="max-w-2xl mx-auto space-y-6 text-right text-lg leading-relaxed">
     <div className="flex items-start gap-3">
       <span className="material-icons text-green-600 text-2xl">groups</span>
-      <p className="m-0">‏تواصل مع موظّفين وعمال ما عم تقدر توصل لهم اليوم</p>
+      <p className="m-0">تواصل مع موظفين وعمال ما عم تقدر توصل لهم اليوم</p>
     </div>
-
     <div className="flex items-start gap-3">
       <span className="material-icons text-green-600 text-2xl">access_time_filled</span>
-      <p className="m-0">وفّر وقتك —  ما في حاجة لمراجعة مئات الطلبات أو متابعة ناس ما بترد أو مالها جاهزة</p>
+      <p className="m-0">وَفّر وقتك — ما في حاجة لمراجعة مئات الطلبات أو متابعة ناس ما بترد أو مالها جاهزة</p>
     </div>
-
     <div className="flex items-start gap-3">
       <span className="material-icons text-green-600 text-2xl">account_box</span>
-      <p className="m-0">‏الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعلنا لبعد ما يبدأ العمل و تطمن  من النتائج</p>
+      <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعنا لَبَعد ما يبدأ العمل و نضمن من النتائج</p>
     </div>
   </div>
 
@@ -149,6 +146,7 @@ export default function Home() {
     </a>
   </div>
 </section>
+
 <section className="bg-white py-16 px-6 text-center">
   <h2 className="text-2xl font-bold mb-12">كيف شَغّلني بيساعد أصحاب الشغل؟</h2>
 
