@@ -3,14 +3,12 @@ import { useState } from 'react'
 
 export default function Home() {
   const [formData, setFormData] = useState({
-    company_name: '',
-    job_title: '',
-    number_of_workers: '',
-    contact_name: '',
-    phone: '',
-    email: '',
-    notes: '',
-  })
+  company_name: '',
+  contact_name: '',
+  phone: '',
+  email: '',
+})
+
   const [showModal, setShowModal] = useState(false)
   const [success, setSuccess] = useState(false)
 
@@ -32,16 +30,14 @@ export default function Home() {
     })
 
     if (response.ok) {
-      setSuccess(true)
-      setFormData({
-        company_name: '',
-        job_title: '',
-        number_of_workers: '',
-        contact_name: '',
-        phone: '',
-        email: '',
-        notes: '',
-      })
+  setSuccess(true)
+  setFormData({
+    company_name: '',
+    contact_name: '',
+    phone: '',
+    email: '',
+  })
+}
     } else {
       alert('حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.')
     }
