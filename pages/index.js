@@ -19,29 +19,34 @@ export default function Home() {
     })
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setSuccess(false)
+ const handleSubmit = async (e) => {
+  e.preventDefault()
+  setSuccess(false)
 
-    const response = await fetch('/api/job-request', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    })
-
-    if (response.ok) {
-  setSuccess(true)
-  setFormData({
-    company_name: '',
-    contact_name: '',
-    phone: '',
-    email: '',
-  })
-}
-    } else {
-      alert('حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.')
-    }
+  const { company_name, contact_name, phone, email } = formData
+  if (!company_name || !contact_name || !phone || !email) {
+    alert('يرجى تعبئة جميع الحقول المطلوبة')
+    return
   }
+
+  const response = await fetch('/api/job-request', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData),
+  })
+
+  if (response.ok) {
+    setSuccess(true)
+    setFormData({
+      company_name: '',
+      contact_name: '',
+      phone: '',
+      email: '',
+    })
+  } else {
+    alert('حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.')
+  }
+}
 
   return (
     <div dir="rtl" className="font-sans bg-white text-gray-900">
