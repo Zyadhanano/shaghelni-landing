@@ -11,7 +11,7 @@ export default function Home() {
     email: '',
     notes: '',
   })
-
+  const [showModal, setShowModal] = useState(false)
   const [success, setSuccess] = useState(false)
 
   const handleChange = (e) => {
@@ -216,6 +216,64 @@ export default function Home() {
       <footer className="bg-gray-800 text-white text-center py-6 text-sm">
         منصة شَغّلني © 2025 – بريد: support@shaghelni.com
       </footer>
+          {showModal && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+    <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative text-right">
+      <button
+        onClick={() => setShowModal(false)}
+        className="absolute top-2 left-2 text-gray-500 hover:text-gray-700"
+      >
+        ✕
+      </button>
+      <h3 className="text-xl font-bold mb-4">نزّل فرصة شغل</h3>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input
+          type="text"
+          name="company_name"
+          placeholder="اسم الشركة"
+          value={formData.company_name}
+          onChange={handleChange}
+          className="w-full p-3 border rounded"
+          required
+        />
+        <input
+          type="text"
+          name="contact_name"
+          placeholder="الاسم الكامل"
+          value={formData.contact_name}
+          onChange={handleChange}
+          className="w-full p-3 border rounded"
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="رقم الهاتف"
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full p-3 border rounded"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="البريد الإلكتروني"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full p-3 border rounded"
+          required
+        />
+        <button
+          type="submit"
+          className="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-800 transition"
+        >
+          أرسل الطلب الآن
+        </button>
+      </form>
+    </div>
+  </div>
+)}
+
     </div>
   )
 }
