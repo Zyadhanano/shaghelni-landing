@@ -37,6 +37,13 @@ export default function Home() {
 
   if (response.ok) {
     setSuccess(true)
+    if (typeof window !== 'undefined' && window.gtag) {
+  window.gtag('event', 'employer_form_submitted', {
+    event_category: 'engagement',
+    event_label: 'Employer CTA Form',
+  })
+}
+    
     setFormData({
       company_name: '',
       contact_name: '',
