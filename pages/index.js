@@ -64,12 +64,12 @@ export default function Home() {
 
 <header className="sticky top-0 z-50 bg-white shadow-sm">
       <nav className="flex justify-between items-center px-6 py-4">
-        {/* Logo on the left */}
+        {/* Logo on the right */}
         <div className="flex items-center">
           <img src="/logo.svg" alt="شَغّلني Logo" className="w-24 h-auto" />
         </div>
 
-        {/* Menu buttons on the right */}
+        {/* Menu buttons on the left */}
         <div className="flex space-x-6 space-x-reverse text-sm font-semibold text-gray-800">
           <a href="#" className="hover:text-blue-700">الصَّفحة الرّئيسيّة</a>
           <a href="#workers" className="hover:text-blue-700">لِلمُوظّفين</a>
