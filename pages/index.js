@@ -69,12 +69,12 @@ export default function Home() {
     >
       بدي اشتغل
     </a>
-    <a
-      href="/employers"
-      className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
-    >
-      بدي وظّف
-    </a>
+    <button
+  onClick={() => setShowModal(true)}
+  className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
+>
+  بدي وظّف
+</button>
   </div>
 </section>
         
@@ -138,12 +138,12 @@ export default function Home() {
   </div>
 
   <div className="mt-10">
-    <a
-      href="#employer-form"
-      className="inline-block bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition text-lg font-semibold"
-    >
-      بدي وظّف
-    </a>
+    <button
+  onClick={() => setShowModal(true)}
+  className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
+>
+  بدي وظّف
+</button>
   </div>
 </section>
 
