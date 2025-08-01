@@ -204,7 +204,12 @@ export default function Home() {
       >
         ✕
       </button>
-      <h3 className="text-xl font-bold mb-4">نزّل فرصة شغل</h3>
+      <p className="mb-6 text-gray-700 leading-relaxed text-right">
+  <strong className="text-xl">سجّل معنا لإستشارة مجانية</strong><br />
+  اترك معلوماتك، وخبير من فريقنا بيتواصل معك<br />
+  ليفهم احتياجاتك
+</p>
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
