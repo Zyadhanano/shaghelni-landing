@@ -206,8 +206,7 @@ export default function Home() {
       </button>
       <p className="mb-6 text-gray-700 leading-relaxed text-right">
   <strong className="text-xl">سجّل معنا لإستشارة مجانية</strong><br />
-  اترك معلوماتك، وخبير من فريقنا بيتواصل معك<br />
-  ليفهم احتياجاتك
+  اترك معلوماتك، وخبير من فريقنا بيتواصل ليفهم احتياجاتك<br />
 </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
