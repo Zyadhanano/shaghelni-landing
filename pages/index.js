@@ -62,6 +62,22 @@ export default function Home() {
   <link rel="icon" href="/favicon.ico" />
 </Head>
 
+<header className="sticky top-0 z-50 bg-white shadow-sm">
+      <nav className="flex justify-between items-center px-6 py-4">
+        {/* Logo on the left */}
+        <div className="flex items-center">
+          <img src="/logo.svg" alt="شَغّلني Logo" className="w-24 h-auto" />
+        </div>
+
+        {/* Menu buttons on the right */}
+        <div className="flex space-x-6 space-x-reverse text-sm font-semibold text-gray-800">
+          <a href="#" className="hover:text-blue-700">الصَّفحة الرّئيسيّة</a>
+          <a href="#workers" className="hover:text-blue-700">لِلمُوظّفين</a>
+          <a href="#employers" className="hover:text-blue-700">لِلشَّركات</a>
+          <a href="#faq" className="hover:text-blue-700">الأسئِلة الشّائِعة</a>
+        </div>
+      </nav>
+    </header>    
 
     <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center px-6 py-12 space-y-6">
   <div className="flex items-center justify-center gap-4 flex-row-reverse">
