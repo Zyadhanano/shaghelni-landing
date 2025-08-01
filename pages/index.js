@@ -43,7 +43,7 @@ export default function Home() {
     event_label: 'Employer CTA Form',
   })
 }
-    
+
     setFormData({
       company_name: '',
       contact_name: '',
@@ -63,24 +63,45 @@ export default function Home() {
 </Head>
 
 
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
-  <nav className="flex justify-between items-center px-6 py-4">
-    {/* Logo on the left */}
-    <div className="flex items-center">
-      <img src="/logo.svg" alt="شَغّلني Logo" className="w-24 h-auto" />
-    </div>
+    <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center px-6 py-12 space-y-6">
+  <div className="flex items-center justify-center gap-4 flex-row-reverse">
+    <img
+      src="/logo.svg"
+      alt="شَغّلني Logo"
+      className="w-32 h-auto"
+    />
+    <h1 className="text-3xl md:text-4xl font-bold max-w-2xl leading-relaxed">
+      الطريقة الجديدة لتوظيف عمّال سوريا
+    </h1>
+  </div>
 
-    {/* Menu buttons on the right */}
-    <div className="flex space-x-6 space-x-reverse text-sm font-semibold text-gray-800">
-      <a href="#" className="hover:text-blue-700">الصَّفحة الرّئيسيّة</a>
-      <a href="#workers" className="hover:text-blue-700">لِلمُوظّفين</a>
-      <a href="#employers" className="hover:text-blue-700">لِلشَّركات</a>
-      <a href="#faq" className="hover:text-blue-700">الأسئِلة الشّائِعة</a>
-    </div>
-  </nav>
-</header>
+  <p className="text-lg max-w-xl text-gray-700">
+    شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين  بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
+  </p>
+  <div className="flex flex-col md:flex-row gap-4">
+    <a
+      href="https://wa.me/WHATSAPPNUMBER" // replace when ready
+      className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
+    >
+      بدي اشتغل
+    </a>
+    <button
+  onClick={() => {
+  setShowModal(true)
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'employer_form_opened', {
+      event_category: 'engagement',
+      event_label: 'Employer CTA Modal',
+    })
+  }
+}}
+  className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
+>
+  بدي وظّف
+</button>
+  </div>
+</section>
 
-        
 <section className="bg-white py-12 px-6 text-center">
   <h2 className="text-2xl font-bold mb-4">بدي اشتغل!</h2>
   <p className="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
@@ -239,7 +260,7 @@ export default function Home() {
     ✅ شكراً! تم استلام معلوماتك وسنتواصل معك قريباً.
   </div>
 )}          
-  
+
         <input
           type="text"
           name="company_name"
