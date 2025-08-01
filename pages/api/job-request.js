@@ -39,8 +39,8 @@ export default async function handler(req, res) {
   // ✅ Send email to admin
   await resend.emails.send({
     from: 'Shaghelni <onboarding@resend.dev>',
-    to: 'support@shaghelni.com', // change this to your actual email if needed
-    subject: '📥 New Employer Job Request',
+    to: 'zyadhanano@gmail.com',
+    subject: '📥 Shaghelni New Employer Job Request',
     html: `
       <h2>New Job Request Received</h2>
       <p><strong>Company Name:</strong> ${company_name}</p>
