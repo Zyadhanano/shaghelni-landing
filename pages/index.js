@@ -68,7 +68,7 @@ export default function Home() {
     الطريقة الجديدة لتوظيف عمّال سوريا
   </h1>
   <p className="text-lg max-w-xl text-gray-700">
-    شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين من سوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
+    شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين  بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
   </p>
   <div className="flex flex-col md:flex-row gap-4">
     <a
@@ -198,19 +198,33 @@ export default function Home() {
   </div>
 </section>
 
-<section className="bg-white py-12 px-6 text-right">
-  <div className="max-w-2xl mx-auto space-y-6 text-lg">
-    <p>سوريا عم ترجع تعمّر، وفرص الشغل عم تكبر بكل القطاعات – من المرافئ والإنشاءات، للطاقة والمطاعم. شَغّلني ‏موجودة لتساعدك تكون جزء من هالفرص.</p>
-    <p>منصتنا بتوصلك مع الشركات الحقيقية يلي بحاجة لناس متلك – ومن دون سير ذاتية ولا تعقيدات.</p>
-    <div className="mt-6 text-center">
-      <a
-        href="https://wa.me/whatsapplink" // ← replace with your actual WhatsApp link
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
-      >
-        ابعتلنا هلق عالواتساب
-      </a>
+<section id="faq" className="bg-white py-16 px-6 text-right">
+  <h2 className="text-2xl font-bold mb-8 text-center">أسئلة شائعة</h2>
+
+  <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed">
+    <div>
+      <h3 className="font-bold mb-2">كيف فيني قدّم عالشغل؟</h3>
+      <p>بس كبسة زر! اضغط على زر "بدي اشتغل" وبتبلّش محادثة على واتساب مع المساعد الذكي يلي بيجمع معلوماتك.</p>
+    </div>
+
+    <div>
+      <h3 className="font-bold mb-2">شو أنواع الشغل الموجودة؟</h3>
+      <p>منشتغل مع شركات بمجالات البناء، المطاعم، الفنادق، التنظيف، النقل وغيرها.</p>
+    </div>
+
+    <div>
+      <h3 className="font-bold mb-2">هل في رسوم لأستخدام شَغّلني؟</h3>
+      <p>أبداً! استخدام شَغّلني مجاني للعمّال بشكل كامل.</p>
+    </div>
+
+    <div>
+      <h3 className="font-bold mb-2">شو بيصير بعد ما بقدّم؟</h3>
+      <p>منراجع ملفك، وإذا كان مناسب لأي وظيفة، منتواصل معك أو منبعتلك تفاصيل الفرصة على واتساب.</p>
+    </div>
+
+    <div>
+      <h3 className="font-bold mb-2">كيف بتختاروا الأشخاص المناسبين لأصحاب الشغل؟</h3>
+      <p>المساعد الذكي بيسأل أسئلة دقيقة، وبنعتمد على خبراتك وتوفرك ومهاراتك لنطابقك مع الفرص المناسبة.</p>
     </div>
   </div>
 </section>
