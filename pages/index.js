@@ -71,7 +71,15 @@ export default function Home() {
       بدي اشتغل
     </a>
     <button
-  onClick={() => setShowModal(true)}
+  onClick={() => {
+  setShowModal(true)
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'employer_form_opened', {
+      event_category: 'engagement',
+      event_label: 'Employer CTA Modal',
+    })
+  }
+}}
   className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
 >
   بدي وظّف
@@ -140,7 +148,15 @@ export default function Home() {
 
   <div className="mt-10">
     <button
-  onClick={() => setShowModal(true)}
+  onClick={() => {
+  setShowModal(true)
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'employer_form_opened', {
+      event_category: 'engagement',
+      event_label: 'Employer CTA Modal',
+    })
+  }
+}}
   className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
 >
   بدي وظّف
