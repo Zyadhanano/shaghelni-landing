@@ -83,7 +83,7 @@ export default function Home() {
     <img
     src="/logo.svg"
     alt="شَغّلني Logo"
-    className="w-56 h-auto mb-4"
+    className="w-64 h-auto mb-4"
   />
   <h1 className="text-3xl md:text-4xl font-bold max-w-2xl leading-relaxed">
     الطريقة الجديدة لتوظيف عمّال سوريا
