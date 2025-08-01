@@ -80,16 +80,15 @@ export default function Home() {
     </header>    
 
     <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center px-6 py-12 space-y-6">
-  <div className="flex items-center justify-center gap-4 flex-row-reverse">
     <img
-      src="/logo.svg"
-      alt="شَغّلني Logo"
-      className="w-32 h-auto"
-    />
-    <h1 className="text-3xl md:text-4xl font-bold max-w-2xl leading-relaxed">
-      الطريقة الجديدة لتوظيف عمّال سوريا
-    </h1>
-  </div>
+    src="/logo.svg"
+    alt="شَغّلني Logo"
+    className="w-56 h-auto mb-4"
+  />
+  <h1 className="text-3xl md:text-4xl font-bold max-w-2xl leading-relaxed">
+    الطريقة الجديدة لتوظيف عمّال سوريا
+  </h1>
+      
 
   <p className="text-lg max-w-xl text-gray-700">
     شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين  بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
