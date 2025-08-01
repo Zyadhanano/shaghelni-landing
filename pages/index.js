@@ -210,6 +210,12 @@ export default function Home() {
 </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
+{success && (
+  <div className="bg-green-100 text-green-800 p-4 rounded text-center">
+    ✅ شكراً! تم استلام معلوماتك وسنتواصل معك قريباً.
+  </div>
+)}          
+  
         <input
           type="text"
           name="company_name"
