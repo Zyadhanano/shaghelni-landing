@@ -54,6 +54,34 @@ export default function Home() {
     alert('حدث خطأ أثناء إرسال الطلب. حاول مرة أخرى.')
   }
 }
+const [openIndex, setOpenIndex] = useState(null)
+
+const toggleFAQ = (index) => {
+  setOpenIndex(openIndex === index ? null : index)
+}
+
+const faqItems = [
+  {
+    question: 'كيف فيني قدّم عالشغل؟',
+    answer: 'بس كبسة زر! اضغط على زر "بدي اشتغل" وبتبلّش محادثة على واتساب مع المساعد الذكي يلي بيجمع معلوماتك.'
+  },
+  {
+    question: 'شو أنواع الشغل الموجودة؟',
+    answer: 'منشتغل مع شركات بمجالات البناء، المطاعم، الفنادق، التنظيف، النقل وغيرها.'
+  },
+  {
+    question: 'هل في رسوم لأستخدام شَغّلني؟',
+    answer: 'أبداً! استخدام شَغّلني مجاني للعمّال بشكل كامل.'
+  },
+  {
+    question: 'شو بيصير بعد ما بقدّم؟',
+    answer: 'منراجع ملفك، وإذا كان مناسب لأي وظيفة، منتواصل معك أو منبعتلك تفاصيل الفرصة على واتساب.'
+  },
+  {
+    question: 'كيف بتختاروا الأشخاص المناسبين لأصحاب الشغل؟',
+    answer: 'المساعد الذكي بيسأل أسئلة دقيقة، وبنعتمد على خبراتك وتوفرك ومهاراتك لنطابقك مع الفرص المناسبة.'
+  },
+]
 
   return (
     <div dir="rtl" className="font-sans bg-white text-gray-900">
@@ -248,36 +276,28 @@ export default function Home() {
   </div>
 </section>
 
-<section id="faq" className="bg-white py-16 px-6 text-right">
+<section id="faq" className="bg-blue-50 py-16 px-6 text-right border-t-4 border-blue-400">
   <h2 className="text-2xl font-bold mb-8 text-center">أسئلة شائعة</h2>
 
-  <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed">
-    <div>
-      <h3 className="font-bold mb-2">كيف فيني قدّم عالشغل؟</h3>
-      <p>بس كبسة زر! اضغط على زر "بدي اشتغل" وبتبلّش محادثة على واتساب مع المساعد الذكي يلي بيجمع معلوماتك.</p>
-    </div>
-
-    <div>
-      <h3 className="font-bold mb-2">شو أنواع الشغل الموجودة؟</h3>
-      <p>منشتغل مع شركات بمجالات البناء، المطاعم، الفنادق، التنظيف، النقل وغيرها.</p>
-    </div>
-
-    <div>
-      <h3 className="font-bold mb-2">هل في رسوم لأستخدام شَغّلني؟</h3>
-      <p>أبداً! استخدام شَغّلني مجاني للعمّال بشكل كامل.</p>
-    </div>
-
-    <div>
-      <h3 className="font-bold mb-2">شو بيصير بعد ما بقدّم؟</h3>
-      <p>منراجع ملفك، وإذا كان مناسب لأي وظيفة، منتواصل معك أو منبعتلك تفاصيل الفرصة على واتساب.</p>
-    </div>
-
-    <div>
-      <h3 className="font-bold mb-2">كيف بتختاروا الأشخاص المناسبين لأصحاب الشغل؟</h3>
-      <p>المساعد الذكي بيسأل أسئلة دقيقة، وبنعتمد على خبراتك وتوفرك ومهاراتك لنطابقك مع الفرص المناسبة.</p>
-    </div>
+  <div className="max-w-3xl mx-auto space-y-4 text-lg leading-relaxed">
+    {faqItems.map((item, index) => (
+      <div key={index} className="border rounded-lg bg-white">
+        <button
+          onClick={() => toggleFAQ(index)}
+          className="w-full text-right p-4 font-bold focus:outline-none"
+        >
+          {item.question}
+        </button>
+        {openIndex === index && (
+          <div className="px-4 pb-4 text-gray-700">
+            {item.answer}
+          </div>
+        )}
+      </div>
+    ))}
   </div>
 </section>
+
 
       <footer className="bg-gray-800 text-white text-center py-6 text-sm">
         منصة شَغّلني © 2025 – بريد: support@shaghelni.com
