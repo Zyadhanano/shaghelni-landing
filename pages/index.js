@@ -79,41 +79,51 @@ export default function Home() {
 </nav>
     </header>    
 
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center px-6 py-12 space-y-6">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-50 px-6 py-12">
+  {/* Image on the left */}
+  <div className="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
     <img
-    src="/logo.svg"
-    alt="شَغّلني Logo"
-    className="w-64 h-auto mb-4"
-  />
-  <h1 className="text-3xl md:text-4xl font-bold max-w-2xl leading-relaxed">
-    الطريقة الجديدة لتوظيف عمّال سوريا
-  </h1>
-      
+      src="/hero.jpg"
+      alt="Hero Image"
+      className="w-full max-w-sm rounded-xl shadow-lg"
+    />
+  </div>
 
-  <p className="text-lg max-w-xl text-gray-700">
-    شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين  بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
-  </p>
-  <div className="flex flex-col md:flex-row gap-4">
-    <a
-      href="https://wa.me/WHATSAPPNUMBER" // replace when ready
-      className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
-    >
-      بدي اشتغل
-    </a>
-    <button
-  onClick={() => {
-  setShowModal(true)
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'employer_form_opened', {
-      event_category: 'engagement',
-      event_label: 'Employer CTA Modal',
-    })
-  }
-}}
-  className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
->
-  بدي وظّف
-</button>
+  {/* Text on the right */}
+  <div className="w-full md:w-1/2 text-center md:text-right space-y-6">
+    <img
+      src="/logo.svg"
+      alt="شَغّلني Logo"
+      className="w-40 h-auto mx-auto md:mx-0"
+    />
+    <h1 className="text-3xl md:text-4xl font-bold leading-relaxed">
+      الطريقة الجديدة لتوظيف عمّال سوريا
+    </h1>
+    <p className="text-lg text-gray-700">
+      شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
+    </p>
+    <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+      <a
+        href="https://wa.me/WHATSAPPNUMBER"
+        className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
+      >
+        بدي اشتغل
+      </a>
+      <button
+        onClick={() => {
+          setShowModal(true)
+          if (typeof window !== 'undefined' && window.gtag) {
+            window.gtag('event', 'employer_form_opened', {
+              event_category: 'engagement',
+              event_label: 'Employer CTA Modal',
+            })
+          }
+        }}
+        className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
+      >
+        بدي وظّف
+      </button>
+    </div>
   </div>
 </section>
 
