@@ -155,6 +155,7 @@ const faqItems = [
   </div>
 </section>
 
+          
 <section id="workers" className="bg-white py-12 px-6 text-center">
   <h2 className="text-2xl font-bold mb-4">بدي اشتغل!</h2>
   <p className="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
