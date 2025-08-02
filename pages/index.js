@@ -155,7 +155,7 @@ const faqItems = [
   </div>
 </section>
 
-<section className="bg-white py-12 px-6 text-center">
+<section id="workers" className="bg-white py-12 px-6 text-center">
   <h2 className="text-2xl font-bold mb-4">بدي اشتغل!</h2>
   <p className="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
     شَغّلني هي خدمة مجانية لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
@@ -176,7 +176,7 @@ const faqItems = [
   </a>
 
 </section>
-<section id="workers" className="bg-white py-16 px-6 text-center">
+<section className="bg-white py-16 px-6 text-center">
   <h2 className="text-2xl font-bold mb-8">كيف شَغّلني بتساعدك تلاقي شغل؟</h2>
   <div className="max-w-2xl mx-auto space-y-6 text-right text-lg leading-relaxed">
     <div className="flex items-start gap-3">
