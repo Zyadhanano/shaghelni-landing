@@ -225,15 +225,15 @@ const faqItems = [
       </h2>
       <div className="space-y-4 text-lg leading-relaxed">
         <div className="flex items-start gap-2">
-          <span className="material-icons text-green-600 text-2xl">groups</span>
+          <span className="material-icons text-blue-600 text-2xl">groups</span>
           <p className="m-0">تواصل مع موظفين وعمال ما عم تقدر توصل لهم اليوم</p>
         </div>
         <div className="flex items-start gap-2">
-          <span className="material-icons text-green-600 text-2xl">access_time_filled</span>
+          <span className="material-icons text-blue-600 text-2xl">access_time_filled</span>
           <p className="m-0">وَفّر وقتك — ما في حاجة لمراجعة مئات الطلبات أو متابعة ناس ما بترد أو مالها جاهزة</p>
         </div>
         <div className="flex items-start gap-2">
-          <span className="material-icons text-green-600 text-2xl">account_box</span>
+          <span className="material-icons text-blue-600 text-2xl">account_box</span>
           <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعنا لَبَعد ما يبدأ العمل و نضمن من النتائج</p>
         </div>
       </div>
