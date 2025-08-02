@@ -290,7 +290,12 @@ const faqItems = [
         </button>
         {openIndex === index && (
           <div className="px-4 pb-4 text-gray-700">
-            {item.answer}
+            <span className="flex justify-between items-center">
+  <span>{item.question}</span>
+  <span className="text-gray-500 text-xl">
+    {openIndex === index ? '▲' : '▼'}
+  </span>
+</span>
           </div>
         )}
       </div>
