@@ -85,7 +85,7 @@ export default function Home() {
     <img
       src="/hero.jpg"
       alt="Hero Image"
-      className="w-full max-w-sm rounded-xl shadow-lg"
+      className="w-full max-w-md md:max-w-2xl lg:max-w-3xl rounded-xl shadow-lg"
     />
   </div>
 
@@ -94,12 +94,12 @@ export default function Home() {
     <img
       src="/logo.svg"
       alt="شَغّلني Logo"
-      className="w-40 h-auto mx-auto md:mx-0"
+      className="w-64 h-auto mx-auto md:mx-0"
     />
-    <h1 className="text-3xl md:text-4xl font-bold leading-relaxed">
+    <h1 className="text-3xl md:text-5xl font-bold leading-relaxed">
       الطريقة الجديدة لتوظيف عمّال سوريا
     </h1>
-    <p className="text-lg text-gray-700">
+    <p className="text-lg md:text-2xl text-gray-700">
       شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
     </p>
     <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
