@@ -107,7 +107,7 @@ const faqItems = [
 </nav>
     </header>    
 
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-50 px-6 py-12">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-100 px-6 py-12">
   {/* Image on the left */}
   <div className="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
     <img
@@ -199,7 +199,7 @@ const faqItems = [
   </div>
 </section>
       
-<section id="employers" className="scroll-mt-24 bg-white py-16 px-6">
+<section id="employers" className="scroll-mt-24 bg-gray-100 py-16 px-6">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
     {/* Text content on the left */}
     <div className="md:w-1/2 text-right space-y-6">
