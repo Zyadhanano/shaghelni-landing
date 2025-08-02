@@ -220,7 +220,7 @@ const faqItems = [
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
     {/* Text content on the left */}
     <div className="md:w-1/2 text-right space-y-6">
-      <h2 className="text-2xl md:text-4xl font-bold mb-4">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">
         ليش ‏الشركات و أصحاب الشغل عم يختاروا شَغّلني؟
       </h2>
       <div className="space-y-4 text-lg leading-relaxed">
