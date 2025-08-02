@@ -128,7 +128,7 @@ const faqItems = [
       الطريقة الجديدة لتوظيف عمّال سوريا
     </h1>
     <p className="text-lg md:text-2xl text-gray-700">
-      شَغّلني منصة بسيطة بتربط أصحاب الشغل مع العمّال الجاهزين بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
+      شَغّلني منصة بسيطة بتربط أصحاب الشغل مع عمّال جاهزين وموثوقين بسوريا — بدون سيرة ذاتية، بدون تسجيل دخول.
     </p>
     <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
       <a
