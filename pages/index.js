@@ -178,16 +178,22 @@ const faqItems = [
 
 </section>
 <section className="bg-white py-16 px-6 text-center">
-  <h2 className="text-2xl font-bold mb-8 text-center">كيف شَغّلني بتساعدك تلاقي شغل؟</h2>
-
-<div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-6xl mx-auto gap-10">
+ <div className="flex flex-col md:flex-row items-center md:items-start justify-between max-w-6xl mx-auto gap-10">
   {/* Image on the left (desktop only) */}
   <div className="w-full md:w-1/2">
-    <img src="/workers-section.jpg" alt="factory worker picture" className="w-full h-auto rounded-lg shadow-md" />
+    <img
+      src="/workers-section.jpg"
+      alt="factory worker picture"
+      className="w-full h-auto rounded-lg shadow-md"
+    />
   </div>
 
-  {/* Steps on the right */}
+  {/* Title and Steps on the right */}
   <div className="w-full md:w-1/2 space-y-6 text-right text-lg leading-relaxed">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+      كيف شَغّلني بتساعدك تلاقي شغل؟
+    </h2>
+
     <div className="flex items-start gap-3">
       <span className="material-icons text-blue-600 text-2xl">chat_bubble_outline</span>
       <p className="m-0">احكي معنا على واتساب</p>
@@ -206,6 +212,7 @@ const faqItems = [
     </div>
   </div>
 </div>
+
 
 </section>
       
