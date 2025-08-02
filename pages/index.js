@@ -282,7 +282,7 @@ const faqItems = [
     <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
       <div className="text-4xl font-bold text-blue-700 mb-3">٢</div>
       <h3 className="font-bold text-xl mb-2">منبعتلك مرشّحين موثوقين</h3>
-      <p>.‏نحنا بنجري مقابلات مع المتقدمين و بنتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل و بطابقوا المواصفات ياللي طلبتها</p>
+      <p>‏نحنا بنجري مقابلات مع المتقدمين و بنتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل و بطابقوا المواصفات ياللي طلبتها.</p>
     </div>
     <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
       <div className="text-4xl font-bold text-blue-700 mb-3">٣</div>
@@ -292,7 +292,7 @@ const faqItems = [
     <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
       <div className="text-4xl font-bold text-blue-700 mb-3">٤</div>
       <h3 className="font-bold text-xl mb-2">بتعمل مقابلة أخيرة وبتوظّف</h3>
-      <p>.وهيك بتعطي فرص حقيقية لناس جدّيين وعم يشتغلوا ليبنوا حياة أفضل</p>
+      <p>وهيك بتعطي فرص حقيقية لناس جدّيين وعم يشتغلوا ليبنوا حياة أفضل.</p>
     </div>
   </div>
 </section>
