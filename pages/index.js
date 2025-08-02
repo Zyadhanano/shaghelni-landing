@@ -90,7 +90,7 @@ const faqItems = [
   <link rel="icon" href="/favicon.ico" />
 </Head>
 
-<header className="sticky top-0 z-50 bg-blue-50 shadow-sm">
+<header className="sticky top-0 z-50 bg-blue-50 shadow-sm border-t-4 border-blue-400">
       <nav className="flex flex-row-reverse justify-between items-center px-6 py-4">
   {/* Logo on the left side (visually) */}
   <div className="flex items-center">
@@ -113,7 +113,7 @@ const faqItems = [
     <img
       src="/hero.jpg"
       alt="Hero Image"
-      className="w-full max-w-md md:max-w-2xl lg:max-w-3xl rounded-xl shadow-lg border-t-4 border-blue-400"
+      className="w-full max-w-md md:max-w-2xl lg:max-w-3xl rounded-xl shadow-lg"
     />
   </div>
 
