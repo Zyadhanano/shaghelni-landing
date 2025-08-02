@@ -170,7 +170,6 @@ export default function Home() {
   </div>
 </section>
       
-</section>
 <section id="employers" className="bg-white py-16 px-6">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
     {/* Text content on the left */}
