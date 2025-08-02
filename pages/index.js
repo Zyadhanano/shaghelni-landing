@@ -147,60 +147,54 @@ export default function Home() {
     احكي معنا
   </a>
 </section>
-<section className="bg-white py-16 px-6 text-center">
-  <h2 className="text-2xl font-bold mb-8">كيف شَغّلني بتساعدك تلاقي شغل؟</h2>
-  <div className="max-w-2xl mx-auto space-y-6 text-right text-lg leading-relaxed">
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">chat_bubble_outline</span>
-      <p className="m-0">احكي معنا على واتساب</p>
-    </div>
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">assignment_turned_in</span>
-      <p className="m-0">جاوب على كم سؤال بسيط</p>
-    </div>
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">storage</span>
-      <p className="m-0">منفوت معلوماتك على قاعدة البيانات</p>
-    </div>
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">emoji_people</span>
-      <p className="m-0">منوصلك بفرص شغل مناسبة</p>
-    </div>
-  </div>
-</section>
-  <section className="bg-gray-50 py-16 px-6 text-center">
-  <h2 className="text-2xl font-bold mb-8">ليش ‏الشركات و أصحاب الشغل عم يختاروا شَغّلني؟</h2>
+<section id="employers" className="bg-white py-16 px-6">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+    {/* Text content on the left */}
+    <div className="md:w-1/2 text-right space-y-6">
+      <h2 className="text-2xl md:text-4xl font-bold mb-4">
+        ليش ‏الشركات و أصحاب الشغل عم يختاروا شَغّلني؟
+      </h2>
+      <div className="space-y-4 text-lg leading-relaxed">
+        <div className="flex items-start gap-2">
+          <span className="material-icons text-green-600 text-2xl">groups</span>
+          <p className="m-0">تواصل مع موظفين وعمال ما عم تقدر توصل لهم اليوم</p>
+        </div>
+        <div className="flex items-start gap-2">
+          <span className="material-icons text-green-600 text-2xl">access_time_filled</span>
+          <p className="m-0">وَفّر وقتك — ما في حاجة لمراجعة مئات الطلبات أو متابعة ناس ما بترد أو مالها جاهزة</p>
+        </div>
+        <div className="flex items-start gap-2">
+          <span className="material-icons text-green-600 text-2xl">account_box</span>
+          <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعنا لَبَعد ما يبدأ العمل و نضمن من النتائج</p>
+        </div>
+      </div>
 
-  <div className="max-w-2xl mx-auto space-y-6 text-right text-lg leading-relaxed">
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">groups</span>
-      <p className="m-0">تواصل مع موظفين وعمال ما عم تقدر توصل لهم اليوم</p>
+      <div className="mt-6">
+        <button
+          onClick={() => {
+            setShowModal(true)
+            if (typeof window !== 'undefined' && window.gtag) {
+              window.gtag('event', 'employer_form_opened', {
+                event_category: 'engagement',
+                event_label: 'Employer CTA Modal',
+              })
+            }
+          }}
+          className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
+        >
+          بدي وظّف
+        </button>
+      </div>
     </div>
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">access_time_filled</span>
-      <p className="m-0">وَفّر وقتك — ما في حاجة لمراجعة مئات الطلبات أو متابعة ناس ما بترد أو مالها جاهزة</p>
-    </div>
-    <div className="flex items-start gap-3">
-      <span className="material-icons text-green-600 text-2xl">account_box</span>
-      <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعنا لَبَعد ما يبدأ العمل و نضمن من النتائج</p>
-    </div>
-  </div>
 
-  <div className="mt-10">
-    <button
-  onClick={() => {
-  setShowModal(true)
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', 'employer_form_opened', {
-      event_category: 'engagement',
-      event_label: 'Employer CTA Modal',
-    })
-  }
-}}
-  className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 text-lg font-semibold"
->
-  بدي وظّف
-</button>
+    {/* Image on the right */}
+    <div className="md:w-1/2">
+      <img
+        src="/employer.jpg"
+        alt="Employers choosing Shaghelni"
+        className="w-full rounded-xl shadow-lg"
+      />
+    </div>
   </div>
 </section>
 
