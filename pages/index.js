@@ -90,7 +90,7 @@ const faqItems = [
   <link rel="icon" href="/favicon.ico" />
 </Head>
 
-<header className="sticky top-0 z-50 bg-white shadow-sm">
+<header className="sticky top-0 z-50 bg-blue-50 shadow-sm">
       <nav className="flex flex-row-reverse justify-between items-center px-6 py-4">
   {/* Logo on the left side (visually) */}
   <div className="flex items-center">
