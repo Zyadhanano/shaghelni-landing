@@ -146,6 +146,30 @@ export default function Home() {
     </svg>
     احكي معنا
   </a>
+
+</section>
+<section className="bg-white py-16 px-6 text-center">
+  <h2 className="text-2xl font-bold mb-8">كيف شَغّلني بتساعدك تلاقي شغل؟</h2>
+  <div className="max-w-2xl mx-auto space-y-6 text-right text-lg leading-relaxed">
+    <div className="flex items-start gap-3">
+      <span className="material-icons text-green-600 text-2xl">chat_bubble_outline</span>
+      <p className="m-0">احكي معنا على واتساب</p>
+    </div>
+    <div className="flex items-start gap-3">
+      <span className="material-icons text-green-600 text-2xl">assignment_turned_in</span>
+      <p className="m-0">جاوب على كم سؤال بسيط</p>
+    </div>
+    <div className="flex items-start gap-3">
+      <span className="material-icons text-green-600 text-2xl">storage</span>
+      <p className="m-0">منفوت معلوماتك على قاعدة البيانات</p>
+    </div>
+    <div className="flex items-start gap-3">
+      <span className="material-icons text-green-600 text-2xl">emoji_people</span>
+      <p className="m-0">منوصلك بفرص شغل مناسبة</p>
+    </div>
+  </div>
+</section>
+      
 </section>
 <section id="employers" className="bg-white py-16 px-6">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
