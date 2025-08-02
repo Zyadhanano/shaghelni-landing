@@ -113,7 +113,7 @@ const faqItems = [
     <img
       src="/hero.jpg"
       alt="Hero Image"
-      className="w-full max-w-md md:max-w-2xl lg:max-w-3xl rounded-xl shadow-lg"
+      className="w-full max-w-md md:max-w-2xl lg:max-w-3xl rounded-xl shadow-lg border-t-4 border-blue-400"
     />
   </div>
 
