@@ -281,25 +281,32 @@ const faqItems = [
 
   <div className="max-w-3xl mx-auto space-y-4 text-lg leading-relaxed">
     {faqItems.map((item, index) => (
-      <div key={index} className="border rounded-lg bg-white">
-        <button
-          onClick={() => toggleFAQ(index)}
-          className="w-full text-right p-4 font-bold focus:outline-none"
-        >
-          {item.question}
-        </button>
-        {openIndex === index && (
-          <div className="px-4 pb-4 text-gray-700">
-            <span className="flex justify-between items-center">
-  <span>{item.question}</span>
-  <span className="text-gray-500 text-xl">
-    {openIndex === index ? '▲' : '▼'}
-  </span>
-</span>
-          </div>
-        )}
+  <div key={index} className="border rounded-lg bg-white">
+    <button
+      onClick={() => toggleFAQ(index)}
+      className="w-full text-right p-4 font-bold flex justify-between items-center focus:outline-none"
+    >
+      <span>{item.question}</span>
+      <svg
+        className={`w-5 h-5 transform transition-transform duration-200 ${
+          openIndex === index ? 'rotate-180' : 'rotate-0'
+        }`}
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    {openIndex === index && (
+      <div className="px-4 pb-4 text-gray-700">
+        {item.answer}
       </div>
-    ))}
+    )}
+  </div>
+))}
+
   </div>
 </section>
 
