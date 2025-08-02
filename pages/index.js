@@ -157,6 +157,8 @@ const faqItems = [
 
           
 <section id="workers" className="scroll-mt-24 bg-white py-12 px-6 text-center">
+  <div className="bg-blue-50 rounded-2xl p-6 md:p-10 max-w-3xl mx-auto text-center shadow-sm mb-10">
+  {/* Keep your exact content inside here */}
   <h2 className="text-2xl font-bold mb-4">بدي اشتغل!</h2>
   <p className="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
     شَغّلني هي خدمة مجانية لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
@@ -175,6 +177,7 @@ const faqItems = [
     </svg>
     احكي معنا
   </a>
+</div>
 
 </section>
 <section className="bg-white py-16 px-6 text-center">
@@ -234,7 +237,7 @@ const faqItems = [
         </div>
         <div className="flex items-start gap-2">
           <span className="material-icons text-blue-600 text-2xl">account_box</span>
-          <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعنا لَبَعد ما يبدأ العمل و نضمن من النتائج</p>
+          <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر ونحنا ما بنطلب منك تدفعنا لَبَعد ما يبدأ العمل</p>
         </div>
       </div>
 
