@@ -237,7 +237,7 @@ const faqItems = [
         </div>
         <div className="flex items-start gap-2">
           <span className="material-icons text-blue-600 text-2xl">account_box</span>
-          <p className="m-0">الموظفين والعمال بيشتغلوا عندك بشكل مباشر. ‏نحنا بندور وانت بتوظف,‏ وما بنطلب منك تدفعلنا أي شيء لبعد ما يبدأ العمل</p>
+          <p className="m-0">‏نحنا بندور وانت بتوظف,‏ وما بنطلب منك تدفعلنا أي شيء لبعد ما يبدأ العمل</p>
         </div>
       </div>
 
