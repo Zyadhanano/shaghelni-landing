@@ -63,7 +63,7 @@ const toggleFAQ = (index) => {
 const faqItems = [
   {
     question: 'كيف فيني قدّم عالشغل؟',
-    answer: 'بس كبسة زر! اضغط على زر "بدي اشتغل" وبتبلّش محادثة على واتساب مع المساعد الذكي يلي بيجمع معلوماتك.'
+    answer: 'بكبسة زر! اضغط على "بدي اشتغل" وبتبلّش محادثة على واتساب مع المساعد الذكي يلي بيجمع معلوماتك.'
   },
   {
     question: 'شو أنواع الشغل الموجودة؟',
@@ -161,7 +161,7 @@ const faqItems = [
   {/* Keep your exact content inside here */}
   <h2 className="text-2xl font-bold mb-4">بدي اشتغل!</h2>
   <p className="text-lg text-gray-700 mb-6 max-w-xl mx-auto">
-    شَغّلني هي خدمة مجانية لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب وبنكمل سوا.
+    شَغّلني هي خدمة مجانية لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب ومنكمل سوا.
   </p>
   <a
     href="https://wa.me/WHATSAPPNUMBER" // replace with your number
@@ -237,7 +237,7 @@ const faqItems = [
         </div>
         <div className="flex items-start gap-2">
           <span className="material-icons text-blue-600 text-2xl">account_box</span>
-          <p className="m-0">‏نحنا بندور وانت بتوظف,‏ وما بنطلب منك تدفعلنا أي شيء لبعد ما يبدأ العمل</p>
+          <p className="m-0">‏نحنا مندور وانت بتوظف,‏ وما منطلب منك تدفعلنا أي شيء لبعد ما يبدأ العمل</p>
         </div>
       </div>
 
@@ -282,12 +282,12 @@ const faqItems = [
     <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
       <div className="text-4xl font-bold text-blue-700 mb-3">٢</div>
       <h3 className="font-bold text-xl mb-2">منبعتلك مرشّحين موثوقين</h3>
-      <p>‏نحنا بنجري مقابلات مع المتقدمين و بنتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل و بطابقوا المواصفات ياللي طلبتها.</p>
+      <p>‏نحنا منجري مقابلات مع المتقدمين و منتأكد انه عندهم سلوك ممتاز، وانهم مهتمين بفرصة العمل و بطابقوا المواصفات ياللي طلبتها.</p>
     </div>
     <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
       <div className="text-4xl font-bold text-blue-700 mb-3">٣</div>
       <h3 className="font-bold text-xl mb-2">إ تختار مين بدك تقابل</h3>
-      <p>‏نحنا منسق مواعيد المقابلات الأخيرة لكي تتأكد وتختار بين المرشحين.</p>
+      <p>‏نحنا منسقلك مواعيد المقابلات الأخيرة لكي تتأكد وتختار بين المرشحين.</p>
     </div>
     <div className="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-start">
       <div className="text-4xl font-bold text-blue-700 mb-3">٤</div>
