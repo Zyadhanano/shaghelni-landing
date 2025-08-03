@@ -333,7 +333,7 @@ const faqItems = [
 
 
       <footer className="bg-gray-800 text-white text-center py-6 text-sm">
-        منصة شَغّلني © 2025 – بريد: support@shaghelni.com
+        منصة شَغّلني © 2025 – بريد: admin@shaghelni.co
       </footer>
           {showModal && (
   <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
