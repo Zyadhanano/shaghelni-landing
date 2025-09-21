@@ -333,10 +333,17 @@ const faqItems = [
 
 
       <footer className="bg-gray-800 text-white text-center py-6 text-sm">
-  منصة شَغّلني © 2025 – بريد: admin@shaghelni.co –{" "}
-  <a href="/privacy-policy" className="underline hover:text-gray-300">
-    Privacy Policy
-  </a>
+  <div className="flex flex-wrap items-center justify-center gap-2" dir="rtl">
+    <span>منصة شَغّلني © 2025</span>
+    <span>– بريد: <span dir="ltr">
+      <a href="mailto:admin@shaghelni.co" className="underline hover:text-gray-300">
+        admin@shaghelni.co
+      </a>
+    </span></span>
+    <span>– <a href="/privacy-policy" className="underline hover:text-gray-300" dir="ltr">
+      Privacy Policy
+    </a></span>
+  </div>
 </footer>
 
           {showModal && (
