@@ -132,7 +132,7 @@ const faqItems = [
     </p>
     <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
       <a
-        href="https://wa.me/WHATSAPPNUMBER"
+        href="https://wa.me/+971562476294"
         className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
       >
         بدي اشتغل
