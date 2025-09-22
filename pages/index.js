@@ -132,7 +132,7 @@ const faqItems = [
     </p>
     <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
       <a
-        href="https://wa.me/message/JZLUCTH6OKWBA1"
+        href="https://wa.me/message/EREVD75MKHGGH1"
         className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
       >
         بدي اشتغل
@@ -164,7 +164,7 @@ const faqItems = [
     شَغّلني هي خدمة مجانية لكل حدا عم يدوّر على شغل بسوريا. لا حاجة لسيرة ذاتية أو إجراءات مطولة بس بتبعتلنا رسالة على واتساب ومنكمل سوا.
   </p>
   <a
-    href="https://wa.me/message/JZLUCTH6OKWBA1"
+    href="https://wa.me/message/EREVD75MKHGGH1"
     className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition text-lg font-semibold"
   >
     <svg
