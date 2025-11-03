@@ -1,17 +1,16 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
-  process.env.SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-function verifyAuth(req: NextApiRequest) {
+function verifyAuth(req) {
   const hdr = req.headers["x-intake-secret"];
   return hdr === process.env.INTAKE_SHARED_SECRET;
 }
 
-function toCandidate(p: any) {
+function toCandidate(p) {
   return {
     user_name:        p.user_name ?? p.name ?? null,
     user_gender:      p.user_gender ?? p.gender ?? null,
@@ -28,7 +27,7 @@ function toCandidate(p: any) {
   };
 }
 
-function toRequisition(p: any) {
+function toRequisition(p) {
   return {
     job_id:         p.job_id ?? p.case_id ?? null,
     company_name:   p.company_name ?? (p.company?.name ?? null),
@@ -38,10 +37,20 @@ function toRequisition(p: any) {
   };
 }
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req, res) {
   try {
-    if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
-    if (!verifyAuth(req)) return res.status(401).json({ error: "Unauthorized" });
+    // Simple GET so you can verify the route exists
+    if (req.method === "GET") {
+      return res.status(200).json({ status: "ok", route: "/api/shaghelni-intake" });
+    }
+
+    if (req.method !== "POST") {
+      return res.status(405).json({ error: "Method not allowed" });
+    }
+
+    if (!verifyAuth(req)) {
+      return res.status(401).json({ error: "Unauthorized" });
+    }
 
     const p = typeof req.body === "object" ? req.body : JSON.parse(req.body || "{}");
 
@@ -63,7 +72,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const { error } = await supabase.from("11L_candidates").insert(row);
     if (error) throw error;
     return res.status(200).json({ ok: true, inserted: "candidate" });
-  } catch (e: any) {
+  } catch (e) {
     console.error("INTAKE ERROR:", e?.message || e);
     return res.status(500).json({ error: "Server error", detail: String(e?.message || e) });
   }
