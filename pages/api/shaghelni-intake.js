@@ -1,10 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
-
 function verifyAuth(req) {
   const hdr = req.headers["x-intake-secret"];
   return hdr === process.env.INTAKE_SHARED_SECRET;
@@ -39,7 +34,7 @@ function toRequisition(p) {
 
 export default async function handler(req, res) {
   try {
-    // Simple GET so you can verify the route exists
+    // Simple GET so you can verify the route exists without needing env vars
     if (req.method === "GET") {
       return res.status(200).json({ status: "ok", route: "/api/shaghelni-intake" });
     }
@@ -51,6 +46,16 @@ export default async function handler(req, res) {
     if (!verifyAuth(req)) {
       return res.status(401).json({ error: "Unauthorized" });
     }
+
+    // Create the Supabase client only when we actually need it
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+      return res.status(500).json({ error: "Server misconfiguration: missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY" });
+    }
+
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
     const p = typeof req.body === "object" ? req.body : JSON.parse(req.body || "{}");
 
